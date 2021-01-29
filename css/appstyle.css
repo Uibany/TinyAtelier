@@ -1,0 +1,136 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #ccc ;
+}
+
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.container > * {
+  background-color:#ccc;
+  padding: 1em;
+}
+
+.content {
+  min-height: 40%;
+}
+
+.container > * {
+  margin-bottom: 2%;
+}
+
+@media screen and (min-width: 40em) {
+  .container > * {
+    margin-bottom: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-gap: 0% 0%;
+    grid-template-rows: 10% auto 20%;  
+  }
+
+  .container >.header {
+    grid-column: 1 / span 3;
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Dancing Script', cursive;
+    color:black;
+    background-color: white;
+    padding: 10px;
+  }
+
+  .sidebar {
+    grid-row-end: span 2;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ccc;
+    max-width: 220px;
+  }
+
+  .brushes {
+    grid-row-end: span 2;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content {
+    grid-column: 2;
+  }
+
+  .footer{
+    margin:auto;
+  }
+
+}
+
+
+#canvas {
+    margin: auto;
+    border-style: solid;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 5px solid gray;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: #80aaff;
+    color:white;
+    border: 0;
+    cursor: pointer;   
+    transition: 0.4s;
+}
+
+.sliderLabel {
+  font-size: 15px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.brushBtn {
+  background-color: #ddd;
+  color: #444;
+  
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border:none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 15px;
+}
+
+/* Add a background color to the button when you move the mouse over it (hover) */
+button:hover {
+  background-color: white;
+  font-size: 15px;
+  color:black;
+  border: 2px solid #80aaff;
+} 
+
+
+#palette{
+  height:60px;
+  width:60px;
+  background-color: grey;
+  border-style: solid;
+  border-width: 2px;  
+  border-color: grey;
+  margin: auto;
+}
+
+
+
+
+
+

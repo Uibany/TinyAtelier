@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="">
+    <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans|Playfair+Display&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Dancing+Script|Sacramento|Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/appstyle.css">
+    <script type="text/javascript" src="jslibs/raphael.js"></script>
+    <script defer type="text/javascript" src="appscripts/main.js"> </script>
+    <title>A Tiny Atelier</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <header class="header">
+            A Tiny Atelier
+        </header>
+
+        <nav class="sidebar">
+            <button id="tech" class="brushBtn">Highlighter</button>
+            <button id="ink" class="brushBtn">Chinese Ink</button>
+            <button id="oil" class="brushBtn">Joyful Strokes</button>
+            <button id="pencil" class="brushBtn">Pointilism</button>
+            <button id="cube" class="brushBtn">Cubism</button>
+            <button id="rainbow" class="brushBtn">Rainbow Brush</button>
+            <button id="bg" class="brushBtn">Paint Bucket</button>
+            <button id="e" class="brushBtn">Eraser</button>
+
+        </nav>
+
+        <article class="content" id="centerDiv">
+
+            <div id="canvas"> </div>
+
+        </article>
+
+
+        <aside class="sidebar">
+
+
+            <label class="sliderLabel">Red</label><br>
+            <input id="sliderR" type="range" min="0" max="255" step="1"><br>
+
+
+            <label class="sliderLabel">Green</label><br>
+            <input id="sliderG" type="range" min="0" max="255" step="1"><br>
+
+            <label class="sliderLabel">Blue</label><br>
+            <input id="sliderB" type="range" min="0" max="255" step="1"><br>
+
+            <label class="sliderLabel">Stroke Width</label><br>
+            <input id="sliderStroke" type="range" min="1" max="50" step=".1"><br>
+
+            <label class="sliderLabel">Opacity</label><br>
+            <input id="opacity" type="range" min="0" max="1" step=".05"><br>
+            <br>
+            Current Color <br><br>
+            <div id="palette"> </div>
+
+
+
+        </aside>
+
+        <footer class="footer" id="myFooter">
+            <button id="clearBtn">CLEAR</button>
+            <button id="undoBtn">UNDO</button>
+        </footer>
+
+    </div>
+</body>
+
+</html>
